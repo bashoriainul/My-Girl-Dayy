@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7d9df">
+  <title>Happy My Girl Day ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="bgMusic" preload="auto" loop>
+    <source src="assets/shape-of-my-heart.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="grain"></div>
+  <div class="petals" aria-hidden="true"></div>
+
+  <main id="app">
+    <!-- PAGE 1 -->
+    <section class="page page-1 active" data-page="1">
+      <div class="intro">
+        <p class="tiny">for the girl who means a lot to me</p>
+        <h1>Happy<br><span>My Girl Day</span></h1>
+        <p class="intro-sub">♡</p>
+        <button class="next-btn" data-next="2">buka suratnya</button>
+      </div>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page page-2" data-page="2">
+      <div class="lily-stage" aria-hidden="true">
+        <div class="moon"></div>
+        <div class="lily-bouquet">
+          <svg class="bouquet-svg" viewBox="0 0 900 900" role="img" aria-label="Animasi buket bunga lily">
+            <defs>
+              <linearGradient id="petal" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#fffafa"/>
+                <stop offset="55%" stop-color="#fff1f4"/>
+                <stop offset="100%" stop-color="#f2c8d3"/>
+              </linearGradient>
+              <linearGradient id="petal2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#fff"/>
+                <stop offset="100%" stop-color="#e9b7c5"/>
+              </linearGradient>
+              <filter id="softGlow">
+                <feGaussianBlur stdDeviation="8" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <g class="stems">
+              <path d="M450 780 C430 620 355 470 290 280" />
+              <path d="M450 780 C455 600 490 420 500 220" />
+              <path d="M450 780 C500 610 610 470 660 290" />
+              <path d="M450 780 C400 610 230 500 170 390" />
+              <path d="M450 780 C520 640 720 570 760 450" />
+              <path d="M450 780 C380 650 330 560 315 450" />
+            </g>
+
+            <g class="leaves">
+              <ellipse cx="342" cy="575" rx="30" ry="95" transform="rotate(-42 342 575)"/>
+              <ellipse cx="560" cy="560" rx="30" ry="100" transform="rotate(48 560 560)"/>
+              <ellipse cx="280" cy="470" rx="24" ry="85" transform="rotate(-65 280 470)"/>
+              <ellipse cx="630" cy="455" rx="24" ry="90" transform="rotate(62 630 455)"/>
+              <ellipse cx="395" cy="430" rx="22" ry="80" transform="rotate(-20 395 430)"/>
+              <ellipse cx="520" cy="390" rx="22" ry="85" transform="rotate(25 520 390)"/>
+            </g>
+
+            <g class="lily lily-a" transform="translate(285 255)">
+              <g class="petals">
+                <path d="M0 70 C-90 20 -85 -65 0 -5 C85 -65 90 20 0 70Z" fill="url(#petal)"/>
+                <path d="M0 70 C-30 -5 5 -95 35 -10 C50 35 35 60 0 70Z" fill="url(#petal2)"/>
+                <path d="M0 70 C30 -5 -5 -95 -35 -10 C-50 35 -35 60 0 70Z" fill="url(#petal)"/>
+              </g>
+              <circle cx="0" cy="48" r="14" fill="#e7ad52"/>
+              <g class="pollen"><circle cx="-28" cy="18" r="4"/><circle cx="25" cy="18" r="4"/><circle cx="0" cy="2" r="4"/></g>
+            </g>
+
+            <g class="lily lily-b" transform="translate(500 205) scale(1.1)">
+              <g class="petals">
+                <path d="M0 70 C-90 20 -85 -65 0 -5 C85 -65 90 20 0 70Z" fill="url(#petal)"/>
+                <path d="M0 70 C-30 -5 5 -95 35 -10 C50 35 35 60 0 70Z" fill="url(#petal2)"/>
+                <path d="M0 70 C30 -5 -5 -95 -35 -10 C-50 35 -35 60 0 70Z" fill="url(#petal)"/>
+              </g>
+              <circle cx="0" cy="48" r="14" fill="#e7ad52"/>
+              <g class="pollen"><circle cx="-28" cy="18" r="4"/><circle cx="25" cy="18" r="4"/><circle cx="0" cy="2" r="4"/></g>
+            </g>
+
+            <g class="lily lily-c" transform="translate(655 300) scale(.95)">
+              <g class="petals">
+                <path d="M0 70 C-90 20 -85 -65 0 -5 C85 -65 90 20 0 70Z" fill="url(#petal)"/>
+                <path d="M0 70 C-30 -5 5 -95 35 -10 C50 35 35 60 0 70Z" fill="url(#petal2)"/>
+                <path d="M0 70 C30 -5 -5 -95 -35 -10 C-50 35 -35 60 0 70Z" fill="url(#petal)"/>
+              </g>
+              <circle cx="0" cy="48" r="14" fill="#e7ad52"/>
+              <g class="pollen"><circle cx="-28" cy="18" r="4"/><circle cx="25" cy="18" r="4"/><circle cx="0" cy="2" r="4"/></g>
+            </g>
+
+            <g class="lily lily-d" transform="translate(175 375) scale(.88)">
+              <g class="petals">
+                <path d="M0 70 C-90 20 -85 -65 0 -5 C85 -65 90 20 0 70Z" fill="url(#petal)"/>
+                <path d="M0 70 C-30 -5 5 -95 35 -10 C50 35 35 60 0 70Z" fill="url(#petal2)"/>
+                <path d="M0 70 C30 -5 -5 -95 -35 -10 C-50 35 -35 60 0 70Z" fill="url(#petal)"/>
+              </g>
+              <circle cx="0" cy="48" r="14" fill="#e7ad52"/>
+              <g class="pollen"><circle cx="-28" cy="18" r="4"/><circle cx="25" cy="18" r="4"/><circle cx="0" cy="2" r="4"/></g>
+            </g>
+
+            <g class="lily lily-e" transform="translate(760 440) scale(.8)">
+              <g class="petals">
+                <path d="M0 70 C-90 20 -85 -65 0 -5 C85 -65 90 20 0 70Z" fill="url(#petal)"/>
+                <path d="M0 70 C-30 -5 5 -95 35 -10 C50 35 35 60 0 70Z" fill="url(#petal2)"/>
+                <path d="M0 70 C30 -5 -5 -95 -35 -10 C-50 35 -35 60 0 70Z" fill="url(#petal)"/>
+              </g>
+              <circle cx="0" cy="48" r="14" fill="#e7ad52"/>
+              <g class="pollen"><circle cx="-28" cy="18" r="4"/><circle cx="25" cy="18" r="4"/><circle cx="0" cy="2" r="4"/></g>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="letter-wrap">
+        <div class="letter">
+          <p class="eyebrow">a little letter for you</p>
+          <h2>Untuk kamu,<br>yang selalu punya tempat sendiri.</h2>
+          <div class="letter-text">
+            <p>Happy My Girl Day, sayang.</p>
+            <p>Aku nggak tahu ada berapa banyak cara untuk menjelaskan kenapa kamu begitu berarti buat aku. Tapi kalau aku harus memilih satu hal untuk aku bilang hari ini, aku cuma mau kamu tahu kalau kehadiran kamu adalah salah satu hal yang paling aku syukuri.</p>
+            <p>Aku suka cara kamu hadir di hidup aku tanpa harus melakukan sesuatu yang besar. Kadang cuma dari senyum kamu, cara kamu cerita, cara kamu ketawa, atau hal kecil yang mungkin menurut kamu biasa aja, tapi entah kenapa bisa tinggal lama di kepala aku.</p>
+            <p>Aku mungkin nggak selalu pandai menunjukkan semuanya. Ada saatnya aku cuma diam, ada saatnya aku nggak tahu harus bilang apa. Tapi bukan berarti aku nggak peduli. Justru ada banyak hal tentang kamu yang diam-diam aku simpan dan aku hargai.</p>
+            <p>Aku suka melihat kamu bahagia. Suka melihat kamu menikmati hal-hal kecil. Suka melihat kamu menjadi diri kamu sendiri tanpa perlu berpura-pura jadi siapa-siapa. Dan kalau suatu hari kamu merasa dunia lagi terlalu ramai, aku harap kamu tetap ingat kalau ada seseorang yang selalu ingin melihat kamu baik-baik aja.</p>
+            <p>Terima kasih karena sudah menjadi kamu. Terima kasih untuk setiap cerita, setiap waktu, setiap tawa, bahkan untuk hal-hal kecil yang mungkin sudah kamu lupa tapi masih aku ingat.</p>
+            <p>Aku nggak mau membuat janji yang terdengar indah tapi kosong. Aku cuma ingin terus punya kesempatan untuk mengenal kamu lebih jauh, menemani sebanyak yang aku bisa, dan membuat lebih banyak kenangan yang nanti bisa kita lihat lagi sambil tersenyum.</p>
+            <p>Kalau hari ini adalah hari untuk merayakan kamu, maka aku ingin kamu tahu satu hal sederhana: kamu layak disayangi dengan tulus, dihargai dengan baik, dan dibuat merasa berarti.</p>
+            <p>Dan untuk hari ini, izinkan aku bilang sekali lagi...</p>
+            <p class="signature-line">Happy My Girl Day, sayang. ♡</p>
+          </div>
+        </div>
+      </div>
+      <button class="next-btn floating-next" data-next="3">lihat kenangan kita</button>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page page-3" data-page="3">
+      <div class="gallery-header">
+        <p class="eyebrow">little pieces of you</p>
+        <h2>Beberapa foto,<br>beberapa alasan untuk tersenyum.</h2>
+      </div>
+
+      <div class="gallery">
+        <figure class="memory m1">
+          <img src="assets/photo-1.png" alt="Potret senyum dengan rambut panjang">
+          <figcaption><span>01</span> Senyum kamu punya cara sendiri buat bikin suasana jadi lebih ringan.</figcaption>
+        </figure>
+        <figure class="memory m2">
+          <img src="assets/photo-2.jpg" alt="Duduk di sofa di ruangan bernuansa pink">
+          <figcaption><span>02</span> Di tempat seramai apa pun, mata aku tetap gampang menemukan kamu.</figcaption>
+        </figure>
+        <figure class="memory m3">
+          <img src="assets/photo-3.jpg" alt="Duduk di meja dengan suasana hangat">
+          <figcaption><span>03</span> Ada ketenangan aneh setiap kali melihat kamu menikmati waktu kamu sendiri.</figcaption>
+        </figure>
+        <figure class="memory m4">
+          <img src="assets/photo-4.jpg" alt="Membawa buket bunga di toko bunga">
+          <figcaption><span>04</span> Bunga sebanyak ini pun masih kalah sama satu senyum kamu.</figcaption>
+        </figure>
+        <figure class="memory m5">
+          <img src="assets/photo-5.jpg" alt="Duduk di taman dengan pakaian biru">
+          <figcaption><span>05</span> Foto sederhana, tapi entah kenapa selalu punya tempat di kepala aku.</figcaption>
+        </figure>
+        <figure class="memory m6">
+          <img src="assets/photo-6.jpg" alt="Berfoto di antara bunga-bunga">
+          <figcaption><span>06</span> Kamu dan bunga-bunga. Kombinasi yang susah banget buat nggak disukai.</figcaption>
+        </figure>
+        <figure class="memory m7">
+          <img src="assets/photo-7.jpg" alt="Berfoto di area buah sambil memegang semangka">
+          <figcaption><span>07</span> Bahkan lagi pegang semangka pun kamu tetap punya gaya sendiri 😭</figcaption>
+        </figure>
+        <figure class="memory m8">
+          <img src="assets/photo-8.jpg" alt="Momen berdua di restoran dengan suasana hangat">
+          <figcaption><span>08</span> Salah satu momen yang pengin aku simpan lama-lama.</figcaption>
+        </figure>
+      </div>
+
+      <button class="next-btn gallery-next" data-next="4">satu halaman lagi</button>
+    </section>
+
+    <!-- PAGE 4 -->
+    <section class="page page-4" data-page="4">
+      <div class="closing">
+        <div class="heart-orbit" aria-hidden="true">
+          <span>♡</span><span>♡</span><span>♡</span>
+        </div>
+        <p class="eyebrow">before this little page ends</p>
+        <h2>Semoga kamu selalu<br>punya alasan untuk bahagia.</h2>
+        <p class="closing-text">Aku mungkin nggak bisa mengubah semua hal yang kamu hadapi, tapi aku berharap hari-hari kamu selalu punya cukup banyak hal kecil yang bikin kamu tersenyum.</p>
+        <p class="closing-text">Terima kasih sudah menjadi bagian dari cerita yang aku punya. Jaga diri, tetap jadi kamu, dan jangan lupa kalau kamu punya seseorang yang selalu senang melihat kamu bahagia.</p>
+        <div class="final">Happy My Girl Day<br><span>with love, always ♡</span></div>
+        <button class="replay-btn" id="replay">ulang dari awal</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="music-pill">
+    <button id="musicToggle" aria-label="Putar atau jeda musik">♫</button>
+    <span>Shape of My Heart</span>
+  </div>
+
+  <div class="page-dots" aria-label="Navigasi halaman">
+    <button class="dot active" data-go="1"></button>
+    <button class="dot" data-go="2"></button>
+    <button class="dot" data-go="3"></button>
+    <button class="dot" data-go="4"></button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
